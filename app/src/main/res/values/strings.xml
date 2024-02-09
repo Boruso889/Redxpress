@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">REDXPRESS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Terms"><font color='#A7A7A7'>By ticking this box, you agree to our</font><font color='#EBBC2E'> Terms and conditions and private policy</font></string>
+
+    <string name="Account"><font color='#A7A7A7'>Already have an account?</font><font color='#0560FA'> Sign in</font></string>
+
+
+
+
+
 </resources>

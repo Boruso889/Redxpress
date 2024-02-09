@@ -12,10 +12,22 @@
         android:theme="@style/Theme.REDXPRESS"
         tools:targetApi="31">
         <activity
-            android:name=".nav_graph"
+            android:name=".RegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardPayment"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
             android:exported="false" />
         <activity
             android:name=".OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nav_graph"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -26,6 +38,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
