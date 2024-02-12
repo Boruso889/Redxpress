@@ -19,18 +19,19 @@ class RegActivity : AppCompatActivity() {
         val etEmail: EditText = findViewById(R.id.etEmail)
         val regBtn: TextView = findViewById(R.id.regBtn)
 
-        regBtn.setOnClickListener{
-        if (etPhone.text.isEmpty()||etName.text.isEmpty()||etPass.text.isEmpty()||etPassAgain.text.isEmpty()||etEmail.text.isEmpty()){ // пустые поля поиск
-            Toast.makeText(this@RegActivity, "Не все поля заполнены", Toast.LENGTH_LONG).show()
-            return@setOnClickListener // alarm
+        regBtn.setOnClickListener {
+            if (etPhone.text.isEmpty() || etName.text.isEmpty() || etPass.text.isEmpty() || etPassAgain.text.isEmpty() || etEmail.text.isEmpty()) { // пустые поля поиск
+                Toast.makeText(this@RegActivity, "Не все поля заполнены", Toast.LENGTH_LONG).show()
+                return@setOnClickListener // alarm
+            }
+            if (!etEmail.text.contains("@")) {
+                Toast.makeText(this@RegActivity, "Неправильно указана почта", Toast.LENGTH_LONG)
+                    .show()
+                return@setOnClickListener // alarm cancel
+            }
+
         }
-        if (!etEmail.text.contains("@")){
-            Toast.makeText(this@RegActivity, "Неправильно указана почта", Toast.LENGTH_LONG).show()
-            return@setOnClickListener // alarm cancel
-        }
+
 
     }
-
-
-
 }
