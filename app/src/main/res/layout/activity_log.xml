@@ -14,9 +14,9 @@
         android:layout_marginTop="20dp"
         android:clickable="true"
         android:text="@string/Account2"
-        app:layout_constraintEnd_toEndOf="@+id/textView25"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintEnd_toEndOf="@+id/tvLogBtn"
+        app:layout_constraintStart_toStartOf="@+id/tvLogBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogBtn" />
 
     <ImageView
         android:id="@+id/ivHide4"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edPassLog"
+        app:layout_constraintTop_toTopOf="@+id/edPassLog"
         app:srcCompat="@drawable/hide" />
 
     <TextView
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edEmailLog"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="20dp"
@@ -91,11 +91,11 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Password"
         android:textColor="@color/regbtn"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/edEmailLog"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailLog" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edPassLog"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="20dp"
@@ -121,20 +121,20 @@
         android:text="Remember password"
         android:textColor="@color/regbtn"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toEndOf="@+id/cbLog"
+        app:layout_constraintTop_toBottomOf="@+id/edPassLog" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cbLog"
         android:layout_width="14dp"
         android:layout_height="14dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/edPassLog"
+        app:layout_constraintTop_toBottomOf="@+id/edPassLog" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/tvRemPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
@@ -143,11 +143,11 @@
         android:text="Forgot Password?"
         android:textColor="@color/skip"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/edPassLog"
+        app:layout_constraintTop_toBottomOf="@+id/edPassLog" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/tvLogBtn"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginStart="24dp"
@@ -162,7 +162,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edPassLog" />
 
     <TextView
         android:id="@+id/textView27"
