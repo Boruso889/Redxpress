@@ -73,6 +73,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/regbtnshape"
         android:ems="10"
+
         android:fontFamily="@font/roboto_medium"
         android:hint="**********@mail.com"
         android:inputType="textEmailAddress"
@@ -103,6 +104,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/regbtnshape"
         android:ems="10"
+        android:textSize="14sp"
         android:fontFamily="@font/roboto_medium"
         android:hint="***********"
         android:inputType="textPassword"
@@ -181,8 +183,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView27"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="@+id/tvLogBtn"
+        app:layout_constraintStart_toStartOf="@+id/tvLogBtn"
         app:layout_constraintTop_toBottomOf="@+id/textView27"
         app:srcCompat="@drawable/googl" />
 

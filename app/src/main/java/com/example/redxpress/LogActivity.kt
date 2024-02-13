@@ -13,7 +13,7 @@ class LogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log)
 
-        val tvSignIn = findViewById<TextView>(R.id.TVsignin)
+        val tvSignUp = findViewById<TextView>(R.id.TVsignup)
         val tvLogBtn = findViewById<TextView>(R.id.tvLogBtn)
         val edEmailLog = findViewById<EditText>(R.id.edEmailLog)
         val edPassLog = findViewById<EditText>(R.id.edPassLog)
@@ -34,6 +34,10 @@ class LogActivity : AppCompatActivity() {
             startActivity(intent)
             this@LogActivity.finish()
         }
-
+        tvSignUp.setOnClickListener{
+            val intent = Intent(this@LogActivity, RegActivity::class.java)
+            startActivity(intent)
+            this@LogActivity.finish()
+        }
     }
 }
