@@ -12,6 +12,15 @@
         android:theme="@style/Theme.REDXPRESS"
         tools:targetApi="31">
         <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewPassActivity"
+            android:exported="false" />
+        <activity
             android:name=".OTPActivity"
             android:exported="false" />
         <activity
@@ -25,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".OnboardPayment"
-            android:exported="false" />
-        <activity
-            android:name=".NavigationActivity"
             android:exported="false" />
         <activity
             android:name=".OnboardingActivity"
