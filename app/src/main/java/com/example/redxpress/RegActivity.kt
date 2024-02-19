@@ -41,10 +41,10 @@ class RegActivity : AppCompatActivity() {
                 Toast.makeText(this@RegActivity, "Not Accepted", Toast.LENGTH_LONG).show()
                 return@setOnClickListener // alarm cancel
             }
-            if (etPass != etPassAgain){
+          /*  if (etPass = etPassAgain){
                 Toast.makeText(this@RegActivity, "Пароли не одинаковы", Toast.LENGTH_LONG).show()
                 return@setOnClickListener// alarm
-                }
+                }*/
         }
         TVsignin.setOnClickListener {
             val intent = Intent(this@RegActivity, LogActivity::class.java)

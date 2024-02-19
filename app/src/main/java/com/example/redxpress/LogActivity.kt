@@ -39,5 +39,10 @@ class LogActivity : AppCompatActivity() {
             startActivity(intent)
             this@LogActivity.finish()
         }
+        tvLogBtn.setOnClickListener{
+            val intent = Intent(this@LogActivity, BottomActivity::class.java)
+            startActivity(intent)
+            this@LogActivity.finish()
+        }
     }
 }

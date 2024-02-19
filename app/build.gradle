@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.example.redxpress'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.redxpress"
@@ -30,12 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    //buildFeatures {
-        //dataBinding = true
-      //  viewBinding = true
-  //  }
-
 }
 
 dependencies {

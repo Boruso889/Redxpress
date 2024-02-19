@@ -32,7 +32,7 @@ class OTPActivity : AppCompatActivity() {
             this@OTPActivity.finish()
         }
         tvSetPass.setOnClickListener{
-            val intent = Intent(this@OTPActivity, HomeActivity::class.java)
+            val intent = Intent(this@OTPActivity, BottomActivity::class.java)
             startActivity(intent)
             this@OTPActivity.finish()
         }
