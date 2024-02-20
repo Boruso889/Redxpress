@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".BottomMenu.FragmentProfile">
 
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView55"
+        app:layout_constraintEnd_toEndOf="@+id/textView55"
+        app:layout_constraintTop_toTopOf="@+id/textView55" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+        app:layout_constraintEnd_toEndOf="@+id/tvPayment"
+        app:layout_constraintTop_toTopOf="@+id/tvPayment" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNotif"
+        app:layout_constraintEnd_toEndOf="@+id/tvNotif"
+        app:layout_constraintTop_toTopOf="@+id/tvNotif" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="13dp"
-        android:elevation="5dp"
+        android:elevation="6dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Edit Profile"
         android:textColor="@color/dflt"
@@ -24,7 +68,6 @@
         android:id="@+id/textView29"
         android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginTop="24dp"
         android:background="#FFF"
         android:elevation="8dp"
         android:gravity="center"
@@ -40,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
@@ -70,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/tvBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -82,7 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/ivHideBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="29dp"
@@ -95,7 +138,7 @@
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto"
         android:text="Enable dark Mode"
         android:textColor="@color/dflt"
@@ -108,14 +151,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:elevation="5dp"
+        android:elevation="6dp"
         android:src="@drawable/profilelogo"
         app:layout_constraintBottom_toBottomOf="@+id/textView34"
         app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toTopOf="@+id/textView34" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swDarkMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
@@ -129,11 +172,13 @@
         android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
         android:background="#FFF"
-        android:elevation="3dp"
+        android:clickable="true"
+        android:elevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
@@ -143,7 +188,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="4dp"
-        android:elevation="5dp"
+        android:elevation="6dp"
         android:fontFamily="@font/roboto"
         android:text="Name, phone no, address, email ..."
         android:textColor="@color/regbtn"
@@ -159,7 +204,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="25dp"
         android:background="#FFF"
-        android:elevation="3dp"
+        android:elevation="5dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
@@ -183,7 +229,7 @@
         android:layout_marginTop="13dp"
         android:elevation="6dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Statements & Reports"
+        android:text="Statements and Reports"
         android:textColor="@color/dflt"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
@@ -202,7 +248,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <TextView
-        android:id="@+id/textView42"
+        android:id="@+id/tvNotif"
         android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginStart="25dp"
@@ -221,9 +267,9 @@
         android:layout_marginStart="12dp"
         android:elevation="6dp"
         android:src="@drawable/profilenotif"
-        app:layout_constraintBottom_toBottomOf="@+id/textView42"
-        app:layout_constraintStart_toStartOf="@+id/textView42"
-        app:layout_constraintTop_toTopOf="@+id/textView42" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvNotif"
+        app:layout_constraintStart_toStartOf="@+id/tvNotif"
+        app:layout_constraintTop_toTopOf="@+id/tvNotif" />
 
     <TextView
         android:id="@+id/textView43"
@@ -237,7 +283,7 @@
         android:textColor="@color/dflt"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/textView42" />
+        app:layout_constraintTop_toTopOf="@+id/tvNotif" />
 
     <TextView
         android:id="@+id/textView44"
@@ -246,24 +292,25 @@
         android:layout_marginTop="4dp"
         android:elevation="6dp"
         android:fontFamily="@font/roboto"
-        android:text="mute, unmute, set location & tracking setting"
+        android:text="mute, unmute, set location and tracking setting"
         android:textColor="@color/regbtn"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView43"
         app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/tvPayment"
         android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="25dp"
         android:background="#FFF"
-        android:elevation="3dp"
+        android:elevation="5dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNotif" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -272,9 +319,9 @@
         android:layout_marginStart="12dp"
         android:elevation="6dp"
         android:src="@drawable/profilewallet"
-        app:layout_constraintBottom_toBottomOf="@+id/textView45"
-        app:layout_constraintStart_toStartOf="@+id/textView45"
-        app:layout_constraintTop_toTopOf="@+id/textView45" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+        app:layout_constraintStart_toStartOf="@+id/tvPayment"
+        app:layout_constraintTop_toTopOf="@+id/tvPayment" />
 
     <TextView
         android:id="@+id/textView46"
@@ -284,11 +331,11 @@
         android:layout_marginTop="13dp"
         android:elevation="6dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Card & Bank account settings"
+        android:text="Card and Bank account settings"
         android:textColor="@color/dflt"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/textView45" />
+        app:layout_constraintTop_toTopOf="@+id/tvPayment" />
 
     <TextView
         android:id="@+id/textView47"
@@ -311,10 +358,11 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="25dp"
         android:background="#FFF"
-        android:elevation="3dp"
+        android:elevation="5dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPayment" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -362,7 +410,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="25dp"
         android:background="#FFF"
-        android:elevation="3dp"
+        android:elevation="5dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
@@ -404,6 +453,78 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView53"
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFF"
+        android:elevation="5dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:elevation="5dp"
+        android:src="@drawable/profilelogout"
+        app:layout_constraintBottom_toBottomOf="@+id/textView55"
+        app:layout_constraintStart_toStartOf="@+id/textView55"
+        app:layout_constraintTop_toTopOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Log Out"
+        android:textColor="@color/dflt"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView48"
+        app:layout_constraintEnd_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/arrowprfile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/textView34" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

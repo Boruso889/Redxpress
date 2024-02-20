@@ -8,6 +8,7 @@
     <string name="Account2"><font color='#A7A7A7'>Already have an account?</font><font color='#0560FA'> Sign up</font></string>
     <string name="RemPass"><font color='#A7A7A7'>Remember password? Back to </font><font color='#0560FA'>Sign In</font></string>
     <string name="OTPSend"><font color='#A7A7A7'>If you didn’t receive code, </font><font color='#0560FA'>resend</font></string>
+    <string name="paymoney">************</string>
 
 
 </resources>

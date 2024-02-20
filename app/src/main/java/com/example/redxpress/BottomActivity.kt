@@ -4,6 +4,8 @@ package com.example.redxpress
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.redxpress.BottomMenu.FragmentHome
 import com.example.redxpress.BottomMenu.FragmentProfile
@@ -11,10 +13,12 @@ import com.example.redxpress.BottomMenu.FragmentTrack
 import com.example.redxpress.BottomMenu.FragmentWallet
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
+
 class BottomActivity : AppCompatActivity() {
-
+ //  val hide: ImageView = findViewById(R.id.ivHideBalance)
+  // val money: TextView = findViewById(R.id.tvPayment)
 private lateinit var bottomNavigationView: BottomNavigationView
-
 
 
 
@@ -47,6 +51,9 @@ private lateinit var bottomNavigationView: BottomNavigationView
         }
         replaceFragment(FragmentHome())
 
+   // hide.setOnClickListener {
+     //   money.setText("**********").toString()
+  //  }
 
     }
     private fun replaceFragment(fragment: Fragment){
