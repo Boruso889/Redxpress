@@ -17,13 +17,14 @@ private val hide = view?.findViewById<ImageView>(R.id.ivHideBalance)
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 
-    ): View? {
+
+    ): View? {hide?.setOnClickListener{
+        money?.setText("******")
+    }
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false)
 
-        hide?.setOnClickListener{
-            money?.setText("******")
-        }
+
     }
 
 
